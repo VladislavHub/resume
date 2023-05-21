@@ -1,0 +1,161 @@
+<hr>
+
+<div>
+    <h1>Web</h1>
+</div>
+
+<div>
+    <h2>Languages:</h2>
+</div>
+
+{{#with web}}
+
+<div>
+    <ul>
+        <li>Name: {{languages.[0].name}}</li>
+        <li>Version: {{languages.[0].version}}</li>
+        <li>Dscription: {{languages.[0].description}}</li>
+
+        <br>
+        <hr>
+
+        <p>Elements:</p>
+
+        <ul>
+            <li>Name: {{languages.[0].elements.[0].name}}</li>
+            <li>Description: {{languages.[0].elements.[0].description}}</li>
+
+            <p>Attributes:</p>
+
+            <ul>
+                <li>Name: {{languages.[0].elements.[0].attributes.[0].name}}</li>
+                <li>Description: {{languages.[0].elements.[0].attributes.[0].description}}</li>
+
+                <br>
+
+                <li>Name: {{languages.[0].elements.[0].attributes.[1].name}}</li>
+                <li>Description: {{languages.[0].elements.[0].attributes.[1].description}}</li>
+            </ul>
+
+            </li>
+        </ul>
+
+        <br>
+
+        <li>Name: {{languages.[0].elements.[1].name}}</li>
+        <li>Description: {{languages.[0].elements.[1].description}}</li>
+
+        <br>
+        <hr>
+
+        <p>Attributes:</p>
+
+        <ul>
+            <li>Name: {{languages.[0].elements.[1].attributes.[0].name}}</li>
+            <li>Description: {{languages.[0].elements.[1].attributes.[0].description}}</li>
+
+            <br>
+
+            <li>Name: {{languages.[0].elements.[1].attributes.[1].name}}</li>
+            <li>Description: {{languages.[0].elements.[1].attributes.[1].description}}</li>
+        </ul>
+
+        </li>
+    </ul>
+
+    <ul>
+        <li>Name: {{languages.[1].name}}</li>
+        <li>Version: ({{languages.[1].version}})</li>
+        <li>Description: {{languages.[1].description}}</li>
+
+        <br>
+        <hr>
+
+        <p>Properties:</p>
+
+        <ul>
+            <li>Name: {{languages.[1].properties.[0].name}}</li>
+            <li>Description: {{languages.[1].properties.[0].description}}</li>
+
+            <br>
+            <hr>
+
+            <p>Values:</p>
+
+            <ul>
+                <li>Value: {{languages.[1].properties.[0].values.[0].value}}</li>
+                <li>Description: {{languages.[1].properties.[0].values.[0].description}}</li>
+
+                <br>
+
+                <li>Value: {{languages.[1].properties.[0].values.[1].value}}</li>
+                <li>Description: {{languages.[1].properties.[0].values.[1].description}}</li>
+            </ul>
+
+            <br>
+
+            <li>Name: {{languages.[1].properties.[1].name}}</li>
+            <li>Description: {{languages.[1].properties.[1].description}}</li>
+
+            <br>
+            <hr>
+
+            <p>Values:</p>
+
+            <ul>
+                <li>Value: {{languages.[1].properties.[1].values.[0].value}}</li>
+                <li>Description: {{languages.[1].properties.[1].values.[0].description}}</li>
+
+                <br>
+
+                <li>Value: {{languages.[1].properties.[1].values.[1].value}}</li>
+                <li>Description: {{languages.[1].properties.[1].values.[1].description}}</li>
+            </ul>
+        </ul>
+    </ul>
+
+    <ul>
+        <li>Name: {{languages.[2].name}}</li>
+        <li>Version: ({{languages.[2].version}})</li>
+        <li>Description: {{languages.[2].description}}</li>
+
+        <br>
+        <hr>
+
+        <p>Functions:</p>
+
+        <ul>
+            <li>Name: {{languages.[2].functions.[0].name}}</li>
+            <li>Description: {{languages.[2].functions.[0].description}}</li>
+
+            <p>Parameters:</p>
+
+            <ul>
+                <li>Name: {{languages.[2].functions.[0].parameters.[0].name}}</li>
+                <li>Type: {{languages.[2].functions.[0].parameters.[0].type}}</li>
+                <li>Description: {{languages.[2].functions.[0].parameters.[0].description}}</li>
+            </ul>
+        </ul>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <ul>
+            <li>Name: {{languages.[2].functions.[1].name}}</li>
+            <li>Description: {{languages.[2].functions.[1].description}}</li>
+
+            <p>Parameters:</p>
+
+            <ul>
+                <li>Name: {{languages.[2].functions.[1].parameters.[0].name}}</li>
+                <li>Type: {{languages.[2].functions.[1].parameters.[0].type}}</li>
+                <li>Description: {{languages.[2].functions.[1].parameters.[0].description}}</li>
+            </ul>
+        </ul>
+
+    </ul>
+</div>
+
+{{/with}}
