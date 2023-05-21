@@ -1,0 +1,136 @@
+{{#with program}}
+{{#with excursion}}
+<div>
+
+    <hr>
+
+    <div>
+        <h1>Excursion</h1>
+        <p>Name: {{name}}</p>
+        <p>Location:</p>
+        <ul>
+            <li>City: {{location.city}}</li>
+            <li>Country: {{location.country}}</li>
+        </ul>
+        <p>Date: {{date}}</p>
+    </div>
+
+    <br>
+    <hr>
+
+    <div>
+        <h2>Program</h2>
+        <p>Name: {{program.[0].name}}</p>
+        <p>Type: {{program.[0].type}}</p>
+        <p>Duration: ({{program.[0].duration}})</p>
+    </div>
+
+    <div>
+        <p>Details:</p>
+        <ul>
+            <p>Museum:</p>
+            <ul>
+                <li>Name: {{program.[0].name}}</li>
+                <li>Lication:</li>
+                <ul>
+                    <li>Address: {{program.[0].details.museum.location.address}}</li>
+                    <li>City: {{program.[0].details.museum.location.city}}</li>
+                    <li>Country: {{program.[0].details.museum.location.country}}</li>
+                </ul>
+
+            </ul>
+            <p>Exhibits:</p>
+            <ul>
+                <li>Name: {{program.[0].details.museum.exhibits.[0].name}}</li>
+                <li>Artist: {{program.[0].details.museum.exhibits.[0].artist}}</li>
+                <li>Description: {{program.[0].details.museum.exhibits.[0].description}}</li>
+                <li>Audio guide: {{#if program.[0].details.museum.exhibits.[0].audio_guide}}
+                    (yes)
+                    {{else}}
+                    (No)
+                    {{/if}}
+                </li>
+            </ul>
+
+            <br>
+
+            <ul>
+                <li>Name: {{program.[0].details.museum.exhibits.[1].name}}</li>
+                <li>Artist: {{#if program.[0].details.museum.exhibits.[1].artist}}
+                    {{else}}
+                    (Absent)
+                    {{/if}}
+                </li>
+                <li>Description: {{program.[0].details.museum.exhibits.[1].description}}</li>
+                <li>Audio guide: {{#if program.[0].details.museum.exhibits.[1].audio_guide}}
+                    (yes)
+                    {{else}}
+                    (No)
+                    {{/if}}
+                </li>
+            </ul>
+
+            <div>
+                <p>Guide:</p>
+                <ul>
+                    <li>Name: {{program.[0].details.guide.name}}</li>
+                    <li>Language: {{program.[0].details.guide.language}}</li>
+                    <li>Rating: ({{program.[0].details.guide.rating}})</li>
+                </ul>
+            </div>
+
+        </ul>
+    </div>
+
+    <br>
+    <hr>
+
+    <div>
+        <h2>Program</h2>
+        <p>Name: {{program.[1].name}}</p>
+        <p>Type: {{program.[1].type}}</p>
+        <p>Duration: ({{program.[1].duration}})</p>
+    </div>
+
+    <div>
+        <p>Details:</p>
+
+        <ul>
+            <p>Venue:</p>
+            <ul>
+                <li>Name: {{program.[1].details.venue.name}}</li>
+                <li>Lication:</li>
+                <ul>
+                    <li>Address: {{program.[1].details.venue.location.address}}</li>
+                    <li>City: {{program.[1].details.venue.location.city}}</li>
+                    <li>Country: {{program.[1].details.venue.location.country}}</li>
+                </ul>
+
+            </ul>
+
+            <p>Performers:</p>
+
+            <ul>
+                <li>Name: {{program.[1].details.performers.[0].name}}</li>
+                <li>Type: {{program.[1].details.performers.[0].type}}</li>
+
+                <br>
+                <br>
+
+                <li>Name: {{program.[1].details.performers.[1].name}}</li>
+                <li>Type: {{program.[1].details.performers.[1].type}}</li>
+            </ul>
+
+            <p>Guide:</p>
+
+            <ul>
+                <li>Name: {{program.[1].details.guide.name}}</li>
+                <li>Language: {{program.[1].details.guide.language}}</li>
+                <li>Rating: ({{program.[1].details.guide.rating}})</li>
+            </ul>
+
+        </ul>
+    </div>
+</div>
+{{/with}}
+{{/with}}
