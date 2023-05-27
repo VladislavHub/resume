@@ -1,0 +1,119 @@
+<div>
+
+    <div>
+        <h1 class="text-center">Page header</h1>
+        <ul>
+            <div class="text-center">Title: {{page_header.title}}</div>
+            <div class="text-center">Description: {{page_header.description}}</div>
+        </ul>
+    </div>
+
+    <div>
+        <div class="text-end display-6">Section</div>
+        <ul>
+            <p>About us:</p>
+            <ul>
+                <p>Title list:</p>
+                <ul>
+                    <li>Main: {{section.about_us.title_list.main}}</li>
+                    <li>Sub: {{section.about_us.title_list.sub}}</li>
+
+                    <br>
+
+                    <button class="btn btn-outline-info">{{section.about_us.button.text}}</button>
+                </ul>
+            </ul>
+        </ul>
+
+        <div class="card">
+            <div class="card-body">
+                <div class="display-5">Advantage</div>
+                <div>Title: {{section.advantage.title}}</div>
+
+                <br>
+
+                <div class="card">
+                    <div class="card-body">
+
+                        <div class="display-4">Efficiency</div>
+                        <ul>
+                            <li>Title: {{section.advantage.efficiency.title}}</li>
+                            <li>Sub title: {{section.advantage.efficiency.sub_title}}</li>
+                            <li>Description: {{section.advantage.efficiency.description}}</li>
+
+                            <br>
+
+                            <button class="btn btn-outline-warning">{{section.advantage.efficiency.button}}</button>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="card">
+                    <div class="card-body">
+                        <div class="display-4 text-center">Innovation</div>
+                        <ul>
+                            <div class="text-center">Title: {{section.advantage.innovation.title}}</div>
+                            <div class="text-center">Sub title: {{section.advantage.innovation.sub_title}}</div>
+                            <div class="text-center">Description: {{section.advantage.innovation.description}}</div>
+
+                            <br>
+
+                            <button class="btn btn-outline-warning">{{section.advantage.innovation.button}}</button>
+
+                            <br>
+                            <br>
+
+                        </ul>
+                    </div>
+                </div>
+                <br>
+
+
+                <div class="card">
+                    <div class="card-body">
+                        <div class="display-4 text-end">Collaboration</div>
+                        <ul>
+                            <div class="text-end">Title: {{section.advantage.collaboration.title}}</div>
+                            <div class="text-end">Sub title: {{section.advantage.collaboration.sub_title}}</div>
+                            <div class="text-end">Description: {{section.advantage.collaboration.description}}</div>
+
+                            <br>
+
+                            <button class="btn btn-outline-warning">{{section.advantage.collaboration.button}}</button>
+                        </ul>
+                    </div>
+                </div>
+
+                </ul>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="card">
+            <div class="card-body">
+                <p class="display-5">Agreement</p>
+                <ul>
+                    <li>Title: {{section.agreement.title}}</li>
+                    <li>Info: </li>
+                    <ul>
+                        <li>Sub title: {{section.agreement.info.sub_title}}</li>
+                        <li>Details:</li>
+                        <ul>
+                            <li>Text: {{section.agreement.info.detail.text}}</li>
+
+                            <br>
+
+                            <button class="btn btn-success">{{section.agreement.info.detail.button}}</button>
+                        </ul>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
