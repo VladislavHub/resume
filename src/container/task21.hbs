@@ -1,0 +1,154 @@
+<div>
+    <div>
+        <h1>Heading</h1>
+        <div class="card">
+            <div class="card-body">
+                <ul>
+                    <div class="display-4">Main:</div>
+                    <li>Title: {{heading.main.title}}</li>
+                    <li>Text: {{heading.main.text}}</li>
+                    <li>Button text:</li>
+
+                    <br>
+
+                    <ul>
+                        <li>Solid:
+                            <button class="btn btn-primary">{{heading.main.button_text.solid}}</button>
+                        </li>
+
+                        <br>
+
+                        <li>Outline:
+                            <button class="btn btn-outline-primary">{{heading.main.button_text.outline}}</button>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="card">
+            <div class="card-body">
+                <ul>
+                    <div class="display-5">Second:</div>
+                    <li>Title: {{heading.second.title}}</li>
+                    <li>Text: {{heading.second.text}}</li>
+                    <li>Button text:</li>
+
+                    <br>
+
+                    <ul>
+                        <li>Solid:
+                            <button class="btn btn-secondary">{{heading.second.button_text.solid}}</button>
+                        </li>
+
+                        <br>
+
+                        <li>Outline:
+                            <button class="btn btn-outline-secondary">{{heading.second.button_text.outline}}</button>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="card">
+            <div class="card-body">
+                <ul>
+                    <div class="display-6">Subblock:</div>
+                    <li>Title: {{heading.subblock.title}}</li>
+                    <li>Text: {{heading.subblock.text}}</li>
+                    <li>Button text:</li>
+
+                    <br>
+
+                    <ul>
+                        <li>Solid:
+                            <button class="btn btn-dark">{{heading.subblock.button_text.solid}}</button>
+                        </li>
+
+                        <br>
+
+                        <li>Outline:
+                            <button class="btn btn-outline-dark">{{heading.subblock.button_text.outline}}</button>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="card">
+        <div class="card-body">
+            <h2>Nested display</h2>
+            <div>
+                <ul>
+                    <li>Title: {{nested_display.title}}</li>
+                    <li>Chicdren display:</li>
+                    <ul>
+                        <li>Title: {{nested_display.children_display.title}}</li>
+                        <li>Text: {{nested_display.children_display.text}}</li>
+
+                        <br>
+
+                        <button class="btn btn-primary">{{nested_display.children_display.button.text}}</button>
+                    </ul>
+
+                    <br>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Header text: {{nested_display.header_text}}</p>
+                            <button class="btn btn-outline-warning">{{nested_display.button.text}}</button>
+                        </div>
+                    </div>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="card">
+        <div class="card-body">
+            <h3>Paragraph</h3>
+            <div>
+                <ul>
+                    <li>Title: {{paragraph.title}}</li>
+                    <li>Text: {{paragraph.text}}
+
+                        <br>
+                        <br>
+
+                        <form action="{{paragraph.button.url}}" target="_blank">
+                            <button class="btn btn-info">{{paragraph.button.text}}</button>
+                        </form>
+
+                        <br>
+
+                    </li>
+                    <li>List name:</li>
+                    <form action="{{paragraph.list_name.[0].url}}" target="_blank">
+                        <button class="btn btn-link">{{paragraph.list_name.[0].text}}</button>
+                    </form>
+
+                    <form action="{{paragraph.list_name.[1].url}}" target="_blank">
+                        <button class="btn btn-link">{{paragraph.list_name.[1].text}}</button>
+                    </form>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</div>
