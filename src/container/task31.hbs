@@ -1,0 +1,403 @@
+<main>
+    <header>
+        <div class="row">
+
+            <div class="col-2">
+                <form action="{{navigation.links.[0].href}}">
+                    <button class="btn btn-link">{{navigation.links.[0].text}}</button>
+                </form>
+            </div>
+
+            <div class="col-2">
+                <form action="{{navigation.links.[1].href}}">
+                    <button class="btn btn-link">{{navigation.links.[1].text}}</button>
+                </form>
+            </div>
+
+            <div class="col-2">
+                <form action="{{navigation.links.[2].href}}">
+                    <button class="btn btn-link">{{navigation.links.[2].text}}</button>
+                </form>
+            </div>
+
+            <div class="col-2">
+                <form action="{{navigation.button.href}}">
+                    <button class="btn btn-primary">{{navigation.button.text}}</button>
+                </form>
+            </div>
+
+        </div>
+    </header>
+
+    <hr>
+    <br>
+
+    <div>
+        <h1>{{header.title}}</h1>
+        <p>{{header.description}}</p>
+        <form action="{{header.button.link}}">
+            <button class="btn btn-primary">{{header.button.text}}</button>
+        </form>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div>
+        <h2>{{city.title}}</h2>
+
+        <div class="row gx-3 gy-5">
+
+            <div class="col-5">
+                <div class="card text-bg-dark">
+                    <img class="card-img-top" src="{{city.cards.[0].picture.src}}" alt="{{city.cards.[0].picture.alt}}">
+                    <div class="card-body">
+                        <h5 class="card-titile">{{city.cards.[0].title}}</h5>
+                        <p>{{city.cards.[0].description}}</p>
+                        <a href="{{city.cards.[0].button.href}}"
+                            class="btn btn-primary">{{city.cards.[0].button.text}}</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-5">
+                <div class="card text-bg-dark">
+                    <img class="card-img-top" src="{{city.cards.[1].picture.src}}" alt="{{city.cards.[1].picture.alt}}">
+                    <div class="card-body">
+                        <h5 class="card-titile">{{city.cards.[1].title}}</h5>
+                        <p>{{city.cards.[1].description}}</p>
+                        <a href="{{city.cards.[1].button.href}}"
+                            class="btn btn-primary">{{city.cards.[1].button.text}}</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-5">
+                <div class="card text-bg-dark">
+                    <img class="card-img-top" src="{{city.cards.[2].picture.src}}" alt="{{city.cards.[2].picture.alt}}">
+                    <div class="card-body">
+                        <h5 class="card-titile">{{city.cards.[2].title}}</h5>
+                        <p>{{city.cards.[2].description}}</p>
+                        <a href="{{city.cards.[2].button.href}}"
+                            class="btn btn-primary">{{city.cards.[2].button.text}}</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-5">
+                <div class="card text-bg-dark">
+                    <img class="card-img-top" src="{{city.cards.[3].picture.src}}" alt="{{city.cards.[3].picture.alt}}">
+                    <div class="card-body">
+                        <h5 class="card-titile">{{city.cards.[3].title}}</h5>
+                        <p>{{city.cards.[3].description}}</p>
+                        <a href="{{city.cards.[3].button.href}}"
+                            class="btn btn-primary">{{city.cards.[3].button.text}}</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div>
+        <h2>{{winner.title}}</h2>
+
+        <br>
+
+        <table class="table">
+            <thead>
+                <th>{{winner.table.head.[0]}}</th>
+                <th>{{winner.table.head.[1]}}</th>
+                <th>{{winner.table.head.[2]}}</th>
+                <th>{{winner.table.head.[3]}}</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>{{winner.table.user.[0].place}}</td>
+                    <td>{{winner.table.user.[0].name}}</td>
+                    <td>{{winner.table.user.[0].surname}}</td>
+                    <td>{{winner.table.user.[0].nickname}}</td>
+                </tr>
+                <tr>
+                    <td>{{winner.table.user.[1].place}}</td>
+                    <td>{{winner.table.user.[1].name}}</td>
+                    <td>{{winner.table.user.[1].surname}}</td>
+                    <td>{{winner.table.user.[1].nickname}}</td>
+                </tr>
+                <tr>
+                    <td>{{winner.table.user.[2].place}}</td>
+                    <td>{{winner.table.user.[2].name}}</td>
+                    <td>{{winner.table.user.[2].surname}}</td>
+                    <td>{{winner.table.user.[2].nickname}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div>
+        <h2>{{gallery.title}}</h2>
+
+        <br>
+
+        <div class="row">
+
+            <div class="col-4 g-3">
+                <div class="card">
+                    <div class="card-header">{{gallery.cards.[0].name}}</div>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <p>{{gallery.cards.[0].items.[0]}}</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p>{{gallery.cards.[0].items.[1]}}</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p>{{gallery.cards.[0].items.[2]}}</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="col-4 g-3">
+                <div class="card">
+                    <div class="card-header">{{gallery.cards.[0].name}}</div>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <p>{{gallery.cards.[0].items.[0]}}</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p>{{gallery.cards.[0].items.[1]}}</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p>{{gallery.cards.[0].items.[2]}}</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="col-4 g-3">
+                <div class="card">
+                    <div class="card-header">{{gallery.cards.[0].name}}</div>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <p>{{gallery.cards.[0].items.[0]}}</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p>{{gallery.cards.[0].items.[1]}}</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p>{{gallery.cards.[0].items.[2]}}</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div>
+        <div class="display-3">{{relaxion.title}}</div>
+
+        <br>
+        <br>
+
+        <div class="row gx-2 gy-4">
+
+            <div class="col-5">
+                <div class="card text-bg-dark">
+                    <div class="card-header">{{relaxion.cards.[0].header}}</div>
+                    <div class="card-body">
+                        <h6 class="card-title">{{relaxion.cards.[0].title}}</h6>
+                        {{relaxion.cards.[0].description}}
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-5">
+                <div class="card text-bg-dark">
+                    <div class="card-header">{{relaxion.cards.[1].header}}</div>
+                    <div class="card-body">
+                        <h6 class="card-title">{{relaxion.cards.[1].title}}</h6>
+                        {{relaxion.cards.[1].description}}
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-5">
+                <div class="card text-bg-dark">
+                    <div class="card-header">{{relaxion.cards.[2].header}}</div>
+                    <div class="card-body">
+                        <h6 class="card-title">{{relaxion.cards.[2].title}}</h6>
+                        {{relaxion.cards.[2].description}}
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-5">
+                <div class="card text-bg-dark">
+                    <div class="card-header">{{relaxion.cards.[3].header}}</div>
+                    <div class="card-body">
+                        <h6 class="card-title">{{relaxion.cards.[3].title}}</h6>
+                        {{relaxion.cards.[3].description}}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <div class="row g-3">
+        <div class="col-6">
+            <div class="card text-bg-light">
+                <div class="card-header text-center">{{rest.cards.[0].header}}</div>
+                <div class="card-body text-center">
+                    <h6 class="card-title">{{rest.cards.[0].title}}</h6>
+                    <p>{{rest.cards.[0].description}}</p>
+                    <button class="btn btn-primary">{{rest.cards.[0].button}}</button>
+                </div>
+                <div class="card-footer text-center">{{rest.cards.[0].footer}}</div>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div class="card text-bg-light">
+                <div class="card-header text-center">{{rest.cards.[0].header}}</div>
+                <div class="card-body text-center">
+                    <h6 class="card-title">{{rest.cards.[0].title}}</h6>
+                    <p>{{rest.cards.[0].description}}</p>
+                    <button class="btn btn-primary">{{rest.cards.[0].button}}</button>
+                </div>
+                <div class="card-footer text-center">{{rest.cards.[0].footer}}</div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+
+    <div>
+        <div class="display-2">{{proposition.title }}</div>
+
+        <br>
+        <br>
+
+        <div class="row g-3">
+
+            <div class="col-5">
+                <div class="card text-bg-warning">
+                    <div class="card-header">{{proposition.card.[0].header}}</div>
+                    <div class="card-body">
+                        <h6 class="card-title text-secondary">{{proposition.card.[0].title}}</h6>
+                        <p>{{proposition.card.[0].description}}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-5">
+                <div class="card text-bg-warning">
+                    <div class="card-header">{{proposition.card.[1].header}}</div>
+                    <div class="card-body">
+                        <h6 class="card-title text-secondary">{{proposition.card.[1].title}}</h6>
+                        <p>{{proposition.card.[1].description}}</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <br>
+    <hr>
+
+    <footer>
+        <div>
+            <h5>{{footer.title}}</h5>
+
+            <div class="row">
+                <div class="col-3">
+                    <form action="{{footer.navigation.[0].href}}" target="_blank">
+                        <button class="btn btn-link">{{footer.navigation.[0].text}}</button>
+                    </form>
+                </div>
+                <div class="col-3">
+                    <form action="{{footer.socialMedia.[0].link}}" target="_blank">
+                        <button class="btn btn-outline-dark">{{footer.socialMedia.[0].name}}</button>
+                    </form>
+                </div>
+                <div class="col-3">
+                    <form action="{{footer.partners.[0].link}}" target="_blank">
+                        <button class="btn btn-outline-info">{{footer.partners.[0].name}}</button>
+                    </form>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row">
+                <div class="col-3">
+                    <form action="{{footer.navigation.[1].href}}" target="_blank">
+                        <button class="btn btn-link">{{footer.navigation.[1].text}}</button>
+                    </form>
+                </div>
+                <div class="col-3">
+                    <form action="{{footer.socialMedia.[1].link}}" target="_blank">
+                        <button class="btn btn-outline-dark">{{footer.socialMedia.[1].name}}</button>
+                    </form>
+                </div>
+                <div class="col-3">
+                    <form action="{{footer.partners.[1].link}}" target="_blank">
+                        <button class="btn btn-outline-info">{{footer.partners.[1].name}}</button>
+                    </form>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row">
+                <div class="col-3">
+                    <form action="{{footer.navigation.[2].href}}" target="_blank">
+                        <button class="btn btn-link">{{footer.navigation.[2].text}}</button>
+                    </form>
+                </div>
+                <div class="col-3">
+                    <form action="{{footer.socialMedia.[2].link}}" target="_blank">
+                        <button class="btn btn-outline-dark">{{footer.socialMedia.[2].name}}</button>
+                    </form>
+                </div>
+                <div class="col-3">
+                    <form action="{{footer.partners.[2].link}}" target="_blank">
+                        <button class="btn btn-outline-info">{{footer.partners.[2].name}}</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+</main>
