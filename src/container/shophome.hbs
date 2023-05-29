@@ -25,7 +25,7 @@
     </div>
 
     <div>
-        <h1 class="text-center mt-5">Топ статті</h1>
+        <h1 class="text-center mt-5">{{newsBlock.title}}</h1>
     </div>
 
     <div>
@@ -228,24 +228,26 @@
     <hr class="my-5">
 
     <div class="nav nav-tabs mb-4">
-        <div class="nav-item">
-            <a href="#" class="nav-link active"> {{goodsBlock.tabs.[0].text}}</a>
+        <div class="row col-12">
+            {{#each goodsBlock.tabs}}
+            {{#if isActive}}
+            <div class="nav-item col-2">
+                <a href="#" class="nav-link active text-center"> {{text}}</a>
+            </div>
+            {{else}}
+            {{#if isDisabled}}
+            <div class="nav-item col-2">
+                <a href="#" class="nav-link disabled text-center"> {{text}}</a>
+            </div>
+            {{else}}
+            <div class="nav-item col-2">
+                <a href="#" class="nav-link text-center"> {{text}}</a>
+            </div>
+            {{/if}}
+            {{/if}}
+            {{/each}}
         </div>
-
-        <div class="nav-item">
-            <a href="#" class="nav-link"> {{goodsBlock.tabs.[1].text}}</a>
-        </div>
-
-        <div class="nav-item">
-            <a href="#" class="nav-link"> {{goodsBlock.tabs.[2].text}}</a>
-        </div>
-
-        <div class="nav-item">
-            <a href="#" class="nav-link disabled"> {{goodsBlock.tabs.[3].text}}</a>
-        </div>
-
     </div>
-
 
     <div class="row">
 
