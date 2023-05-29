@@ -1,0 +1,573 @@
+<main class="m-5">
+
+    <div class="card">
+        <div class="card-body">
+            <div class="nav">
+
+                <div class="nav-item">
+                    <a href="{{navigation.links.[0].href}}" class="nav-link">{{navigation.links.[0].text}}</a>
+                </div>
+
+                <div class="nav-item me-2">
+                    <a href="{{navigation.links.[1].href}}" class="nav-link active">{{navigation.links.[1].text}}</a>
+                </div>
+
+                <div class="nav-item ">
+                    <a href="{{navigation.links.[2].href}}" class="nav-link">{{navigation.links.[2].text}}</a>
+                </div>
+
+                <div class="nav-item">
+                    <a href="#" class="nav-link disabled">Disabled</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h1 class="text-center mt-5">{{newsBlock.title}}</h1>
+    </div>
+
+    <div>
+        <div class="row">
+
+            <div class="col-3 my-3">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        {{#if newsBlock.cards.[0].isTop}}
+                        <div class="badge rounded-pill text-bg-success">Top</div>
+                        {{else}}
+
+                        {{/if}}
+
+                        {{#if newsBlock.cards.[0].isNew}}
+                        <div class="badge rounded-pill text-bg-danger">New</div>
+                        {{else}}
+
+                        {{/if}}
+                    </div>
+                    <div class="card-body">
+                        <div>
+                            <h6 class="card-title">{{newsBlock.cards.[0].title}}</h6>
+                            <div>{{newsBlock.cards.[0].description}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3 my-3">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        {{#if newsBlock.cards.[1].isTop}}
+                        <div class="badge rounded-pill text-bg-success">Top</div>
+                        {{else}}
+
+                        {{/if}}
+
+                        {{#if newsBlock.cards.[1].isNew}}
+                        <div class="badge rounded-pill text-bg-danger">New</div>
+                        {{else}}
+
+                        {{/if}}
+                    </div>
+                    <div class="card-body">
+                        <div>
+                            <h6 class="card-title">{{newsBlock.cards.[1].title}}</h6>
+                            <div>{{newsBlock.cards.[1].description}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3 my-3">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        {{#if newsBlock.cards.[2].isTop}}
+                        <div class="badge rounded-pill text-bg-success">Top</div>
+                        {{else}}
+
+                        {{/if}}
+
+                        {{#if newsBlock.cards.[2].isNew}}
+                        <div class="badge rounded-pill text-bg-danger">New</div>
+                        {{else}}
+
+                        {{/if}}
+                    </div>
+                    <div class="card-body">
+                        <div>
+                            <h6 class="card-title">{{newsBlock.cards.[2].title}}</h6>
+                            <div>{{newsBlock.cards.[2].description}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3 my-3">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        {{#if newsBlock.cards.[3].isTop}}
+                        <div class="badge rounded-pill text-bg-success">Top</div>
+                        {{else}}
+
+                        {{/if}}
+
+                        {{#if newsBlock.cards.[3].isNew}}
+                        <div class="badge rounded-pill text-bg-danger">New</div>
+                        {{else}}
+
+                        {{/if}}
+                    </div>
+                    <div class="card-body">
+                        <div>
+                            <h6 class="card-title">{{newsBlock.cards.[3].title}}</h6>
+                            <div>{{newsBlock.cards.[3].description}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3 my-3">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        {{#if newsBlock.cards.[4].isTop}}
+                        <div class="badge rounded-pill text-bg-success">Top</div>
+                        {{else}}
+
+                        {{/if}}
+
+                        {{#if newsBlock.cards.[4].isNew}}
+                        <div class="badge rounded-pill text-bg-danger">New</div>
+                        {{else}}
+
+                        {{/if}}
+                    </div>
+                    <div class="card-body">
+                        <div>
+                            <h6 class="card-title">{{newsBlock.cards.[4].title}}</h6>
+                            <div>{{newsBlock.cards.[4].description}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3 my-3">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        {{#if newsBlock.cards.[5].isTop}}
+                        <div class="badge rounded-pill text-bg-success">Top</div>
+                        {{else}}
+
+                        {{/if}}
+
+                        {{#if newsBlock.cards.[5].isNew}}
+                        <div class="badge rounded-pill text-bg-danger">New</div>
+                        {{else}}
+
+                        {{/if}}
+                    </div>
+                    <div class="card-body">
+                        <div>
+                            <h6 class="card-title">{{newsBlock.cards.[5].title}}</h6>
+                            <div>{{newsBlock.cards.[5].description}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3 my-3">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        {{#if newsBlock.cards.[6].isTop}}
+                        <div class="badge rounded-pill text-bg-success">Top</div>
+                        {{else}}
+
+                        {{/if}}
+
+                        {{#if newsBlock.cards.[6].isNew}}
+                        <div class="badge rounded-pill text-bg-danger">New</div>
+                        {{else}}
+
+                        {{/if}}
+                    </div>
+                    <div class="card-body">
+                        <div>
+                            <h6 class="card-title">{{newsBlock.cards.[6].title}}</h6>
+                            <div>{{newsBlock.cards.[6].description}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3 my-3">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        {{#if newsBlock.cards.[7].isTop}}
+                        <div class="badge rounded-pill text-bg-success">Top</div>
+                        {{else}}
+
+                        {{/if}}
+
+                        {{#if newsBlock.cards.[7].isNew}}
+                        <div class="badge rounded-pill text-bg-danger">New</div>
+                        {{else}}
+
+                        {{/if}}
+                    </div>
+                    <div class="card-body">
+                        <div>
+                            <h6 class="card-title">{{newsBlock.cards.[7].title}}</h6>
+                            <div>{{newsBlock.cards.[7].description}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="my-5">
+
+    <div class="nav nav-tabs mb-4">
+        <div class="row col-12">
+            {{#each goodsBlock.tabs}}
+            {{#if isActive}}
+            <div class="nav-item col-2">
+                <a href="#" class="nav-link active text-center"> {{text}}</a>
+            </div>
+            {{else}}
+            {{#if isDisabled}}
+            <div class="nav-item col-2">
+                <a href="#" class="nav-link disabled text-center"> {{text}}</a>
+            </div>
+            {{else}}
+            <div class="nav-item col-2">
+                <a href="#" class="nav-link text-center"> {{text}}</a>
+            </div>
+            {{/if}}
+            {{/if}}
+            {{/each}}
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-4 my-3">
+            <div class="card">
+                <img class="card-img-top" src="{{goodsBlock.cards.[0].image}}">
+                <div class="card-body">
+                    <div>
+                        <h6 class="card-title">{{goodsBlock.cards.[0].title}}
+                            {{#if goodsBlock.cards.[0].isHot}}
+                            <div class="badge rounded-pill text-bg-warning">Hot!</div>
+                            {{else}}
+
+                            {{/if}}
+
+                            {{#if goodsBlock.cards.[0].isNew}}
+                            <div class="badge rounded-pill text-bg-primary">New</div>
+                            {{else}}
+
+                            {{/if}}
+                        </h6>
+                        <div>{{goodsBlock.cards.[0].description}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4 my-3">
+            <div class="card">
+                <img class="card-img-top" src="{{goodsBlock.cards.[1].image}}">
+                <div class="card-body">
+                    <div>
+                        <h6 class="card-title">{{goodsBlock.cards.[1].title}}
+                            {{#if goodsBlock.cards.[1].isHot}}
+                            <div class="badge rounded-pill text-bg-warning">Hot!</div>
+                            {{else}}
+
+                            {{/if}}
+
+                            {{#if goodsBlock.cards.[1].isNew}}
+                            <div class="badge rounded-pill text-bg-primary">New</div>
+                            {{else}}
+
+                            {{/if}}
+                        </h6>
+                        <div>{{goodsBlock.cards.[1].description}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 my-3">
+            <div class="card">
+                <img class="card-img-top" src="{{goodsBlock.cards.[2].image}}">
+                <div class="card-body">
+                    <div>
+                        <h6 class="card-title">{{goodsBlock.cards.[2].title}}
+                            {{#if goodsBlock.cards.[2].isHot}}
+                            <div class="badge rounded-pill text-bg-warning">Hot!</div>
+                            {{else}}
+
+                            {{/if}}
+
+                            {{#if goodsBlock.cards.[2].isNew}}
+                            <div class="badge rounded-pill text-bg-primary">New</div>
+                            {{else}}
+
+                            {{/if}}
+                        </h6>
+                        <div>{{goodsBlock.cards.[2].description}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4 my-3">
+            <div class="card">
+                <img class="card-img-top" src="{{goodsBlock.cards.[3].image}}">
+                <div class="card-body">
+                    <div>
+                        <h6 class="card-title">{{goodsBlock.cards.[3].title}}
+                            {{#if goodsBlock.cards.[3].isHot}}
+                            <div class="badge rounded-pill text-bg-warning">Hot!</div>
+                            {{else}}
+
+                            {{/if}}
+
+                            {{#if goodsBlock.cards.[3].isNew}}
+                            <div class="badge rounded-pill text-bg-primary">New</div>
+                            {{else}}
+
+                            {{/if}}
+                        </h6>
+                        <div>{{goodsBlock.cards.[3].description}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4 my-3">
+            <div class="card">
+                <img class="card-img-top" src="{{goodsBlock.cards.[4].image}}">
+                <div class="card-body">
+                    <div>
+                        <h6 class="card-title">{{goodsBlock.cards.[4].title}}
+                            {{#if goodsBlock.cards.[4].isHot}}
+                            <div class="badge rounded-pill text-bg-warning">Hot!</div>
+                            {{else}}
+
+                            {{/if}}
+
+                            {{#if goodsBlock.cards.[4].isNew}}
+                            <div class="badge rounded-pill text-bg-primary">New</div>
+                            {{else}}
+
+                            {{/if}}
+                        </h6>
+                        <div>{{goodsBlock.cards.[4].description}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4 my-3">
+            <div class="card">
+                <img class="card-img-top" src="{{goodsBlock.cards.[5].image}}">
+                <div class="card-body">
+                    <div>
+                        <h6 class="card-title">{{goodsBlock.cards.[5].title}}
+                            {{#if goodsBlock.cards.[5].isHot}}
+                            <div class="badge rounded-pill text-bg-warning">Hot!</div>
+                            {{else}}
+
+                            {{/if}}
+
+                            {{#if goodsBlock.cards.[5].isNew}}
+                            <div class="badge rounded-pill text-bg-primary">New</div>
+                            {{else}}
+
+                            {{/if}}
+                        </h6>
+                        <div>{{goodsBlock.cards.[5].description}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <hr class="my-5">
+
+    <div>
+        <div class="card text-bg-dark">
+            <div class="card-header">
+                <h2>{{subscribe.header}}</h2>
+            </div>
+            <div class="card-body">
+                <div>{{subscribe.description}}</div>
+
+                <form class="m-3 ms-0" action="{{subscribe.buttons.[0].link}}" target="_blank">
+                    <button class="btn btn-primary">{{subscribe.buttons.[0].text}}</button>
+                </form>
+
+                <form class="m-3 ms-0 mb-0" action="{{subscribe.buttons.[1].link}}" target="_blank">
+                    <button class="btn btn-primary">{{subscribe.buttons.[1].text}}</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <hr class="my-5">
+
+    <div>
+        <div class="card text-bg-dark">
+            <div class="card-header">
+                <h2 class="text-center">{{service.title}}</h2>
+            </div>
+            <div class="card-body">
+                <div class="text-center">{{service.description}}</div>
+
+                <form class="m-3 mt-3 mb-0 text-center" action="{{service.buttons.[0].link}}" target="_blank">
+                    <button class="btn btn-primary">{{service.buttons.[0].text}}</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <hr class="my-5">
+
+    <footer>
+        <div>
+            <div class="row">
+
+                <div class="col-2">
+                    <form action="{{footer.[0].[0].link}}" target="_blank">
+                        <button class="btn btn-link">{{footer.[0].[0].text}}</button>
+                    </form>
+                </div>
+
+                <div class="col-2">
+                    <form action="{{footer.[1].[0].link}}" target="_blank">
+                        <button class="btn btn-link">{{footer.[0].[0].text}}</button>
+                    </form>
+                </div>
+
+                <div class="col-2">
+                    <form action="{{footer.[2].[0].link}}" target="_blank">
+                        <button class="btn btn-link">{{footer.[2].[0].text}}</button>
+                    </form>
+                </div>
+
+                <div class="col-2">
+                    <form action="{{footer.[3].[0].link}}" target="_blank">
+                        <button class="btn btn-link">{{footer.[3].[0].text}}</button>
+                    </form>
+                </div>
+
+                <div class="col-2">
+                    <form action="{{footer.[4].[0].link}}" target="_blank">
+                        <button class="btn btn-link">{{footer.[4].[0].text}}</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    <form action="{{footer.[0].[1].link}}" target="_blank">
+                        <button class="btn btn-link">{{footer.[0].[1].text}}</button>
+                    </form>
+                </div>
+
+                <div class="col-2">
+                    <form action="{{footer.[1].[1].link}}" target="_blank">
+                        <button class="btn btn-link">{{footer.[0].[1].text}}</button>
+                    </form>
+                </div>
+
+                <div class="col-2">
+                    <form action="{{footer.[2].[1].link}}" target="_blank">
+                        <button class="btn btn-link">{{footer.[2].[1].text}}</button>
+                    </form>
+                </div>
+
+                <div class="col-2">
+                    <form action="{{footer.[3].[1].link}}" target="_blank">
+                        <button class="btn btn-link">{{footer.[3].[1].text}}</button>
+                    </form>
+                </div>
+
+                <div class="col-2">
+                    <form action="{{footer.[4].[1].link}}" target="_blank">
+                        <button class="btn btn-link">{{footer.[4].[1].text}}</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    <form action="{{footer.[0].[2].link}}" target="_blank">
+                        <button class="btn btn-link">{{footer.[0].[2].text}}</button>
+                    </form>
+                </div>
+
+                <div class="col-2">
+                    <form action="{{footer.[1].[2].link}}" target="_blank">
+                        <button class="btn btn-link">{{footer.[0].[2].text}}</button>
+                    </form>
+                </div>
+
+                <div class="col-2">
+                    <form action="{{footer.[2].[2].link}}" target="_blank">
+                        <button class="btn btn-link">{{footer.[2].[2].text}}</button>
+                    </form>
+                </div>
+
+                <div class="col-2">
+                    <form action="{{footer.[3].[2].link}}" target="_blank">
+                        <button class="btn btn-link">{{footer.[3].[2].text}}</button>
+                    </form>
+                </div>
+
+                <div class="col-2">
+                    <form action="{{footer.[4].[2].link}}" target="_blank">
+                        <button class="btn btn-link">{{footer.[4].[2].text}}</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    <form action="{{footer.[0].[3].link}}" target="_blank">
+                        <button class="disabled btn btn-link">{{footer.[0].[3].text}}</button>
+                    </form>
+                </div>
+
+                <div class="col-2">
+                    <form action="{{footer.[1].[3].link}}" target="_blank">
+                        <button class="disabled btn btn-link">{{footer.[0].[3].text}}</button>
+                    </form>
+                </div>
+
+                <div class="col-2">
+                    <form action="{{footer.[2].[3].link}}" target="_blank">
+                        <button class="disabled btn btn-link">{{footer.[2].[3].text}}</button>
+                    </form>
+                </div>
+
+                <div class="col-2">
+                    <form action="{{footer.[3].[3].link}}" target="_blank">
+                        <button class="disabled btn btn-link">{{footer.[3].[3].text}}</button>
+                    </form>
+                </div>
+
+                <div class="col-2">
+                    <form action="{{footer.[4].[3].link}}" target="_blank">
+                        <button class="disabled btn btn-link">{{footer.[4].[3].text}}</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</main>

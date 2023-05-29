@@ -222,7 +222,7 @@
 
 </main> --}}
 
-<main>
+{{!-- <main>
     <div class="row g-4">
         <div class="col-12">
             <div class="nav nav-tabs">
@@ -293,4 +293,90 @@
         </div>
 
     </div>
+</main> --}}
+
+<main class="p-5">
+
+    <div class="row g-5">
+
+        <div class="col-6 me-2">
+            <label clas="form-label">Email address</label>
+            <input class="form-control form-control-lg">
+            <div class="form-text text-danger">Error. You need to set correct email</div>
+        </div>
+
+
+        <div class="col-6 me-2">
+            <label clas="form-label">Email address</label>
+            <input class="form-control form-control-sm">
+            <div class="form-text text-danger">Error. You need to set correct email</div>
+        </div>
+
+
+        <div class="col-6 me-2">
+            <label clas="form-label">Email address</label>
+            <input disabled class="form-control ">
+            <div class="form-text text-danger">Error. You need to set correct email</div>
+        </div>
+
+        <hr>
+
+        <div class="col-6 me-2">
+            <label clas="form-label">Select role</label>
+            <select class="form-select">
+                <option selected>Open list</option>
+                <option value="1">Admin</option>
+                <option value="2">User</option>
+            </select>
+        </div>
+
+        <hr>
+
+        <div class="col-12">
+            <div clas="form-label">Select food</div>
+
+            <div class="form-check">
+                <label class="form-check-label">Apple</label>
+                <input type="checkbox" class="form-check-input">
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">Oranhe</label>
+                <input type="checkbox" class="form-check-input">
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">Banana</label>
+                <input type="checkbox" class="form-check-input">
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="col-12">
+            <div clas="form-label">Select food</div>
+
+            <div class="form-check">
+                <label class="form-check-label">Apple</label>
+                <input name="food" type="radio" class="form-check-input">
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">Oranhe</label>
+                <input name="food" type="radio" class="form-check-input">
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">Banana</label>
+                <input name="food" type="radio" class="form-check-input">
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="col-12">
+            <div class="form-check form-switch">
+                <label class="form-check-label">Get bonus</label>
+                <input name="food" type="checkbox" class="form-check-input">
+            </div>
+        </div>
+
+    </div>
+
 </main>
