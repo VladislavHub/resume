@@ -3405,5 +3405,13 @@ router.get('/shopcatalog', function (req, res) {
   //                  ↑↑ сюди вводимо JSON дані
 })
 
+// ================================================================
+
+router.get('/index', function (req, res) {
+  res.render('index8', {
+    layout: 'index',
+  })
+})
+
 // Підключаємо роутер до бек-енду
 module.exports = router

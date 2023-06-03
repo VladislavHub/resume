@@ -1,190 +1,156 @@
-<br>
-<div>
-    <p>Name: {{name}}</p>
-    <p>Users:</p>
-    <ul>
-        <li>Id: ({{users.[0].id}})</li>
-        <li>Name: {{users.[0].name}}</li>
-        <li>Gender: {{users.[0].gender}}</li>
-        <li>Age: {{users.[0].age}}</li>
-
-        <br>
-
-        <p>Friends:</p>
+<main class="g-5">
+    <div>
+        <p>Name: {{name}}</p>
+        <p>Users:</p>
         <ul>
-            <li>Id: ({{users.[0].friends.[0].id}})</li>
-            <li>Name: {{users.[0].friends.[0].name}}</li>
-            <li>Gender: {{users.[0].friends.[0].gender}}</li>
-            <li>Age: {{users.[0].friends.[0].age}}</li>
+            <li>Id: ({{users.[0].id}})</li>
+            <li>Name: {{users.[0].name}}</li>
+            <li>Gender: {{users.[0].gender}}</li>
+            <li>Age: {{users.[0].age}}</li>
 
-            <br>
-
-            <p>Mutual friends</p>
+            <p class="mt-3">Friends:</p>
             <ul>
-                <li>Id: ({{users.[0].friends.[0].mutual_friends.[0].id}})</li>
-                <li>Name: {{users.[0].friends.[0].mutual_friends.[0].name}}</li>
-                <li>Gender: {{users.[0].friends.[0].mutual_friends.[0].gender}}</li>
-                <li>Age: {{users.[0].friends.[0].mutual_friends.[0].age}}</li>
-            </ul>
+                <li>Id: ({{users.[0].friends.[0].id}})</li>
+                <li>Name: {{users.[0].friends.[0].name}}</li>
+                <li>Gender: {{users.[0].friends.[0].gender}}</li>
+                <li>Age: {{users.[0].friends.[0].age}}</li>
 
-            <br>
+                <p class="mt-3">Mutual friends</p>
+                <ul class="mb-4">
+                    <li>Id: ({{users.[0].friends.[0].mutual_friends.[0].id}})</li>
+                    <li>Name: {{users.[0].friends.[0].mutual_friends.[0].name}}</li>
+                    <li>Gender: {{users.[0].friends.[0].mutual_friends.[0].gender}}</li>
+                    <li>Age: {{users.[0].friends.[0].mutual_friends.[0].age}}</li>
+                </ul>
 
-            <li>Id: ({{users.[0].friends.[1].id}})</li>
-            <li>Name: {{users.[0].friends.[1].name}}</li>
-            <li>Gender: {{users.[0].friends.[1].gender}}</li>
-            <li>Age: {{users.[0].friends.[1].age}}</li>
+                <li>Id: ({{users.[0].friends.[1].id}})</li>
+                <li>Name: {{users.[0].friends.[1].name}}</li>
+                <li>Gender: {{users.[0].friends.[1].gender}}</li>
+                <li>Age: {{users.[0].friends.[1].age}}</li>
 
-            <br>
-
-            <p>Mutual friends</p>
-            <ul>
-                <li>Id: ({{users.[0].friends.[1].mutual_friends.[0].id}})</li>
-                <li>Name: {{users.[0].friends.[1].mutual_friends.[0].name}}</li>
-                <li>Gender: {{users.[0].friends.[1].mutual_friends.[0].gender}}</li>
-                <li>Age: {{users.[0].friends.[1].mutual_friends.[0].age}}</li>
-            </ul>
-        </ul>
-
-        <br>
-
-        <p>Groups:</p>
-
-        <ul>
-            <li>Id: ({{users.[0].groups.[0].id}})</li>
-            <li>Name: {{users.[0].groups.[0].name}}</li>
-            <li>Description: {{users.[0].groups.[0].description}}</li>
-
-            <br>
-
-            <p>Members:</p>
-            <ul>
-                <li>Id: ({{users.[0].groups.[0].members.[0].id}})</li>
-                <li>Name: {{users.[0].groups.[0].members.[0].name}}</li>
-                <li>Gender: {{users.[0].groups.[0].members.[0].gender}}</li>
-                <li>Age: {{users.[0].groups.[0].members.[0].age}}</li>
-            </ul>
-        </ul>
-        {{!-- ввввввввввввввввввввввввввввв --}}
-        <br>
-        <br>
-
-        <ul>
-            <li>Id: ({{users.[0].groups.[1].id}})</li>
-            <li>Name: {{users.[0].groups.[1].name}}</li>
-            <li>Description: {{users.[0].groups.[1].description}}</li>
-
-            <br>
-
-            <p>Members:</p>
-            <ul>
-                <li>Id: ({{users.[0].groups.[1].members.[0].id}})</li>
-                <li>Name: {{users.[0].groups.[1].members.[0].name}}</li>
-                <li>Gender: {{users.[0].groups.[1].members.[0].gender}}</li>
-                <li>Age: {{users.[0].groups.[1].members.[0].age}}</li>
-            </ul>
-
-            <br>
-
-            <ul>
-                <li>Id: ({{users.[0].groups.[1].members.[1].id}})</li>
-                <li>Name: {{users.[0].groups.[1].members.[1].name}}</li>
-                <li>Gender: {{users.[0].groups.[1].members.[1].gender}}</li>
-                <li>Age: {{users.[0].groups.[1].members.[1].age}}</li>
-            </ul>
-        </ul>
-    </ul>
-
-    <ul>
-        <li>Id: ({{users.[1].id}})</li>
-        <li>Name: {{users.[1].name}}</li>
-        <li>Gender: {{users.[1].gender}}</li>
-        <li>Age: {{users.[1].age}}</li>
-
-        <br>
-
-        <p>Friends:</p>
-        <ul>
-            <li>Id: ({{users.[1].friends.[0].id}})</li>
-            <li>Name: {{users.[1].friends.[0].name}}</li>
-            <li>Gender: {{users.[1].friends.[0].gender}}</li>
-            <li>Age: {{users.[1].friends.[0].age}}</li>
-        </ul>
-
-        <br>
-        <ul>
-            <p>Mutual friends</p>
-            <ul>
-                <li>Id: ({{users.[1].friends.[0].mutual_friends.[0].id}})</li>
-                <li>Name: {{users.[1].friends.[0].mutual_friends.[0].name}}</li>
-                <li>Gender: {{users.[1].friends.[0].mutual_friends.[0].gender}}</li>
-                <li>Age: {{users.[1].friends.[0].mutual_friends.[0].age}}</li>
-            </ul>
-
-            <br>
-
-            <ul>
-                <li>Id: ({{users.[1].friends.[0].mutual_friends.[1].id}})</li>
-                <li>Name: {{users.[1].friends.[0].mutual_friends.[1].name}}</li>
-                <li>Gender: {{users.[1].friends.[0].mutual_friends.[1].gender}}</li>
-                <li>Age: {{users.[1].friends.[0].mutual_friends.[1].age}}</li>
-            </ul>
-
-            <br>
-            <ul>
-                <p>Mutual friends</p>
+                <p class="mt-3">Mutual friends</p>
                 <ul>
-                    <li>Id: ({{users.[1].friends.[0].mutual_friends.[1].mutual_friends.[0].id}})</li>
-                    <li>Name: {{users.[1].friends.[0].mutual_friends.[1].mutual_friends.[0].name}}</li>
-                    <li>Gender: {{users.[1].friends.[0].mutual_friends.[1].mutual_friends.[0].gender}}</li>
-                    <li>Age: {{users.[1].friends.[0].mutual_friends.[1].mutual_friends.[0].age}}</li>
+                    <li>Id: ({{users.[0].friends.[1].mutual_friends.[0].id}})</li>
+                    <li>Name: {{users.[0].friends.[1].mutual_friends.[0].name}}</li>
+                    <li>Gender: {{users.[0].friends.[1].mutual_friends.[0].gender}}</li>
+                    <li>Age: {{users.[0].friends.[1].mutual_friends.[0].age}}</li>
                 </ul>
             </ul>
 
-            <br>
-
-            <p>Groups:</p>
+            <p class="mt-3">Groups:</p>
 
             <ul>
-                <li>Id: ({{users.[1].friends.[0].groups.[0].id}})</li>
-                <li>Name: {{users.[1].friends.[0].groups.[0].name}}</li>
-                <li>Description: {{users.[1].friends.[0].groups.[0].description}}</li>
+                <li>Id: ({{users.[0].groups.[0].id}})</li>
+                <li>Name: {{users.[0].groups.[0].name}}</li>
+                <li>Description: {{users.[0].groups.[0].description}}</li>
 
-                <br>
-
-                <p>Members:</p>
+                <p class="mt-3">Members:</p>
                 <ul>
-                    <li>Id: ({{users.[1].friends.[0].groups.[0].members.[0].id}})</li>
-                    <li>Name: {{users.[1].friends.[0].groups.[0].members.[0].name}}</li>
-                    <li>Gender: {{users.[1].friends.[0].groups.[0].members.[0].gender}}</li>
-                    <li>Age: {{users.[1].friends.[0].groups.[0].members.[0].age}}</li>
+                    <li>Id: ({{users.[0].groups.[0].members.[0].id}})</li>
+                    <li>Name: {{users.[0].groups.[0].members.[0].name}}</li>
+                    <li>Gender: {{users.[0].groups.[0].members.[0].gender}}</li>
+                    <li>Age: {{users.[0].groups.[0].members.[0].age}}</li>
                 </ul>
             </ul>
 
-            <br>
+            <ul class="mt-5">
+                <li>Id: ({{users.[0].groups.[1].id}})</li>
+                <li>Name: {{users.[0].groups.[1].name}}</li>
+                <li>Description: {{users.[0].groups.[1].description}}</li>
 
-            <ul>
-                <li>Id: ({{users.[1].friends.[0].groups.[1].id}})</li>
-                <li>Name: {{users.[1].friends.[0].groups.[1].name}}</li>
-                <li>Description: {{users.[1].friends.[0].groups.[1].description}}</li>
-
-                <br>
-
-                <p>Members:</p>
+                <p class="mt-3">Members:</p>
                 <ul>
-                    <li>Id: ({{users.[1].friends.[0].groups.[1].members.[0].id}})</li>
-                    <li>Name: {{users.[1].friends.[0].groups.[1].members.[0].name}}</li>
-                    <li>Gender: {{users.[1].friends.[0].groups.[1].members.[0].gender}}</li>
-                    <li>Age: {{users.[1].friends.[0].groups.[1].members.[0].age}}</li>
+                    <li>Id: ({{users.[0].groups.[1].members.[0].id}})</li>
+                    <li>Name: {{users.[0].groups.[1].members.[0].name}}</li>
+                    <li>Gender: {{users.[0].groups.[1].members.[0].gender}}</li>
+                    <li>Age: {{users.[0].groups.[1].members.[0].age}}</li>
                 </ul>
 
-                <br>
-
-                <ul>
-                    <li>Id: ({{users.[1].friends.[0].groups.[1].members.[1].id}})</li>
-                    <li>Name: {{users.[1].friends.[0].groups.[1].members.[1].name}}</li>
-                    <li>Gender: {{users.[1].friends.[0].groups.[1].members.[1].gender}}</li>
-                    <li>Age: {{users.[1].friends.[0].groups.[1].members.[1].age}}</li>
+                <ul class="mt-3">
+                    <li>Id: ({{users.[0].groups.[1].members.[1].id}})</li>
+                    <li>Name: {{users.[0].groups.[1].members.[1].name}}</li>
+                    <li>Gender: {{users.[0].groups.[1].members.[1].gender}}</li>
+                    <li>Age: {{users.[0].groups.[1].members.[1].age}}</li>
                 </ul>
             </ul>
         </ul>
-</div>
+
+        <ul>
+            <li>Id: ({{users.[1].id}})</li>
+            <li>Name: {{users.[1].name}}</li>
+            <li>Gender: {{users.[1].gender}}</li>
+            <li>Age: {{users.[1].age}}</li>
+
+            <p class="mt-3">Friends:</p>
+            <ul>
+                <li>Id: ({{users.[1].friends.[0].id}})</li>
+                <li>Name: {{users.[1].friends.[0].name}}</li>
+                <li>Gender: {{users.[1].friends.[0].gender}}</li>
+                <li>Age: {{users.[1].friends.[0].age}}</li>
+            </ul>
+
+            <ul>
+                <p class="mt-3">Mutual friends</p>
+                <ul>
+                    <li>Id: ({{users.[1].friends.[0].mutual_friends.[0].id}})</li>
+                    <li>Name: {{users.[1].friends.[0].mutual_friends.[0].name}}</li>
+                    <li>Gender: {{users.[1].friends.[0].mutual_friends.[0].gender}}</li>
+                    <li>Age: {{users.[1].friends.[0].mutual_friends.[0].age}}</li>
+                </ul>
+
+                <ul class="mt-3">
+                    <li>Id: ({{users.[1].friends.[0].mutual_friends.[1].id}})</li>
+                    <li>Name: {{users.[1].friends.[0].mutual_friends.[1].name}}</li>
+                    <li>Gender: {{users.[1].friends.[0].mutual_friends.[1].gender}}</li>
+                    <li>Age: {{users.[1].friends.[0].mutual_friends.[1].age}}</li>
+                </ul>
+
+                <ul class="mt-3">
+                    <p class="mt-3">Mutual friends</p>
+                    <ul>
+                        <li>Id: ({{users.[1].friends.[0].mutual_friends.[1].mutual_friends.[0].id}})</li>
+                        <li>Name: {{users.[1].friends.[0].mutual_friends.[1].mutual_friends.[0].name}}</li>
+                        <li>Gender: {{users.[1].friends.[0].mutual_friends.[1].mutual_friends.[0].gender}}</li>
+                        <li>Age: {{users.[1].friends.[0].mutual_friends.[1].mutual_friends.[0].age}}</li>
+                    </ul>
+                </ul>
+
+                <p class="mt-3">Groups:</p>
+
+                <ul>
+                    <li>Id: ({{users.[1].friends.[0].groups.[0].id}})</li>
+                    <li>Name: {{users.[1].friends.[0].groups.[0].name}}</li>
+                    <li>Description: {{users.[1].friends.[0].groups.[0].description}}</li>
+
+                    <p class="mt-3">Members:</p>
+                    <ul>
+                        <li>Id: ({{users.[1].friends.[0].groups.[0].members.[0].id}})</li>
+                        <li>Name: {{users.[1].friends.[0].groups.[0].members.[0].name}}</li>
+                        <li>Gender: {{users.[1].friends.[0].groups.[0].members.[0].gender}}</li>
+                        <li>Age: {{users.[1].friends.[0].groups.[0].members.[0].age}}</li>
+                    </ul>
+                </ul>
+
+                <ul class="mt-3">
+                    <li>Id: ({{users.[1].friends.[0].groups.[1].id}})</li>
+                    <li>Name: {{users.[1].friends.[0].groups.[1].name}}</li>
+                    <li>Description: {{users.[1].friends.[0].groups.[1].description}}</li>
+
+                    <p class="mt-3">Members:</p>
+                    <ul>
+                        <li>Id: ({{users.[1].friends.[0].groups.[1].members.[0].id}})</li>
+                        <li>Name: {{users.[1].friends.[0].groups.[1].members.[0].name}}</li>
+                        <li>Gender: {{users.[1].friends.[0].groups.[1].members.[0].gender}}</li>
+                        <li>Age: {{users.[1].friends.[0].groups.[1].members.[0].age}}</li>
+                    </ul>
+
+                    <ul class="mt-3">
+                        <li>Id: ({{users.[1].friends.[0].groups.[1].members.[1].id}})</li>
+                        <li>Name: {{users.[1].friends.[0].groups.[1].members.[1].name}}</li>
+                        <li>Gender: {{users.[1].friends.[0].groups.[1].members.[1].gender}}</li>
+                        <li>Age: {{users.[1].friends.[0].groups.[1].members.[1].age}}</li>
+                    </ul>
+                </ul>
+            </ul>
+    </div>
+</main>

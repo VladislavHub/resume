@@ -1,37 +1,35 @@
-<div>
-    <h1>{{name}}</h1>
-</div>
+<main class="g-5">
+    <div>
+        <h1>{{name}}</h1>
+    </div>
 
-<div>
-    <ul>
-        <li>Birthdate ({{birthdate}}),</li>
-        <li>Birthplace: {{birthplace}},</li>
-        <li>Deathdate ({{deathdate}}),</li>
-        <li>Nationality: {{nationality}},</li>
-        <li>Occupation: {{occupation}},</li>
+    <div class="my-5">
+        <ul>
+            <li>Birthdate ({{birthdate}}),</li>
+            <li>Birthplace: {{birthplace}},</li>
+            <li>Deathdate ({{deathdate}}),</li>
+            <li>Nationality: {{nationality}},</li>
+            <li>Occupation: {{occupation}},</li>
 
-    </ul>
-</div>
+        </ul>
+    </div>
 
-<br>
-<hr>
-<br>
+    <hr>
 
-<div>
-    <h2>Known for:</h2>
-    <ul>
-        <li>{{known_for.[0]}}</li>
-        <li>{{known_for.[1]}}</li>
-        <li>{{known_for.[2]}}</li>
-        <li>{{known_for.[3]}}</li>
-    </ul>
-</div>
+    <div class="my-5">
+        <h2 class="mb-4">Known for:</h2>
+        <ul>
+            <li>{{known_for.[0]}}</li>
+            <li>{{known_for.[1]}}</li>
+            <li>{{known_for.[2]}}</li>
+            <li>{{known_for.[3]}}</li>
+        </ul>
+    </div>
 
-<hr>
+    <hr>
 
-<div>
-    <section>
-        <h2>Education</h2>
+    <div class="my-5">
+        <h2 class="mb-4">Education</h2>
         {{#each education}}
         <div>
             <ul>
@@ -42,14 +40,12 @@
             </ul>
         </div>
         {{/each}}
-    </section>
-</div>
+    </div>
 
-<hr>
+    <hr>
 
-<div>
-    <section>
-        <h2>Notable publications</h2>
+    <div class="my-5">
+        <h2 class="mb-4">Notable publications</h2>
         <div>
             <ul>
                 <li>Title: {{notable_publications.[0].title}}</li>
@@ -65,127 +61,127 @@
                 <p>Publisher: {{notable_publications.[1].publisher}}</p>
             </ul>
         </div>
-    </section>
-</div>
+    </div>
 
-<hr>
+    <hr>
 
-<div>
-    <section>
-        <h2>Partners</h2>
-        <div>
-            <ul>
-                <li>Name: {{partners.[0].name}}</li>
-                <p>Relationship: {{partners.[0].relationship}}</p>
-                <p>Years: {{partners.[0].years}}</p>
-            </ul>
+    <div>
+        <section>
+            <h2 class="mb-4">Partners</h2>
+            <div>
+                <ul>
+                    <li>Name: {{partners.[0].name}}</li>
+                    <p>Relationship: {{partners.[0].relationship}}</p>
+                    <p>Years: {{partners.[0].years}}</p>
+                </ul>
 
-            <br>
+                <br>
 
-            <ul>
-                <li>Name: {{partners.[1].name}}</li>
-                <p>Relationship: {{partners.[1].relationship}}</p>
-                <p>Years: {{partners.[1].years}}</p>
-            </ul>
-        </div>
-    </section>
-</div>
+                <ul>
+                    <li>Name: {{partners.[1].name}}</li>
+                    <p>Relationship: {{partners.[1].relationship}}</p>
+                    <p>Years: {{partners.[1].years}}</p>
+                </ul>
+            </div>
+        </section>
+    </div>
 
-<hr>
+    <hr>
 
-<div>
-    <section>
-        <h2>Awards</h2>
-        <div>
-            <ul>
-                {{#each awards}}
-                <li>Title: {{title}}</li>
-                <p>Year: {{year}}</p>
-                <p>Description: {{description}}</p>
-                {{/each}}
-            </ul>
-        </div>
-    </section>
-</div>
+    <div>
+        <section>
+            <h2 class="mb-4">Awards</h2>
+            <div>
+                <ul>
+                    {{#each awards}}
+                    <li>Title: {{title}}</li>
+                    <p>Year: {{year}}</p>
+                    <p>Description: {{description}}</p>
+                    {{/each}}
+                </ul>
+            </div>
+        </section>
+    </div>
 
-<hr>
+    <hr>
 
-<div>
-    <section>
-        <h2>Influences</h2>
-        <div>
-            <ul>
-                <li>{{influences.[0]}}</li>
-                <li>{{influences.[1]}}</li>
-                <li>{{influences.[2]}}</li>
-            </ul>
-        </div>
-    </section>
-</div>
+    <div>
+        <section>
+            <h2 class="mb-4">Influences</h2>
+            <div>
+                <ul>
+                    <li>{{influences.[0]}}</li>
+                    <li>{{influences.[1]}}</li>
+                    <li>{{influences.[2]}}</li>
+                </ul>
+            </div>
+        </section>
+    </div>
 
-<hr>
+    <hr>
 
-<div>
-    <section>
-        <h2>Influenced</h2>
-        <div>
-            <ul>
-                <li>{{influenced.[0]}}</li>
-                <li>{{influenced.[1]}}</li>
-                <li>{{influenced.[2]}}</li>
-                <li>{{influenced.[3]}}</li>
-            </ul>
-        </div>
-    </section>
-</div>
+    <div>
+        <section>
+            <h2 class="mb-4">Influenced</h2>
+            <div>
+                <ul>
+                    <li>{{influenced.[0]}}</li>
+                    <li>{{influenced.[1]}}</li>
+                    <li>{{influenced.[2]}}</li>
+                    <li>{{influenced.[3]}}</li>
+                </ul>
+            </div>
+        </section>
+    </div>
 
-<hr>
+    <hr>
 
-<div>
-    <section>
-        <h2>Quotes</h2>
-        <div>
-            <ul>
-                <li>{{quotes.[0]}}</li>
-                <li>{{quotes.[1]}}</li>
-                <li>{{quotes.[2]}}</li>
-                <li>{{quotes.[3]}}</li>
-            </ul>
-        </div>
-    </section>
-</div>
+    <div>
+        <section>
+            <h2 class="mb-4">Quotes</h2>
+            <div>
+                <ul>
+                    <li>{{quotes.[0]}}</li>
+                    <li>{{quotes.[1]}}</li>
+                    <li>{{quotes.[2]}}</li>
+                    <li>{{quotes.[3]}}</li>
+                </ul>
+            </div>
+        </section>
+    </div>
 
-<hr>
+    <hr>
 
-<div>
-    <section>
-        <h2>Major discoveries</h2>
-        <div>
-            <ul>
-                {{#each major_discoveries}}
-                <li>Title: {{title}}</li>
-                <p>Year: {{year}}</p>
-                <p>Description: {{description}}</p>
-                {{/each}}
-            </ul>
-        </div>
-    </section>
-</div>
+    <div>
+        <section>
+            <h2 class="mb-4">Major discoveries</h2>
+            <div>
+                <ul>
+                    {{#each major_discoveries}}
+                    <li>Title: {{title}}</li>
+                    <p>Year: {{year}}</p>
+                    <p>Description: {{description}}</p>
+                    {{/each}}
+                </ul>
+            </div>
+        </section>
+    </div>
 
-<hr>
+    <hr>
 
-<div>
-    <section>
-        <h2>Contributions</h2>
-        <div>
-            <ul>
-                {{#with contributions}}
-                <li>Title: {{title}}</li>
-                <p>Description: {{description}}</p>
-                <p>Year: {{year}}</p>
-                <p>Field: {{field}}</p>
-                {{/with}}
-            </ul>
-        </div>
-    </section>
-</div>
+    <div>
+        <section>
+            <h2 class="mb-4">Contributions</h2>
+            <div>
+                <ul>
+                    {{#with contributions}}
+                    <li>Title: {{title}}</li>
+                    <p>Description: {{description}}</p>
+                    <p>Year: {{year}}</p>
+                    <p>Field: {{field}}</p>
+                    {{/with}}
+                </ul>
+            </div>
+        </section>
+    </div>
+</main>

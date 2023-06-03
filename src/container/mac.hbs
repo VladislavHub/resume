@@ -1,125 +1,101 @@
-<br>
-<div>
-    <p>Name: {{name}}</p>
-    <p>Description: {{description}}</p>
-    <p>Price: ({{price}})</p>
-    <p>Category: {{category}}</p>
+<main class="g-5">
+    <div>
+        <p>Name: {{name}}</p>
+        <p>Description: {{description}}</p>
+        <p>Price: ({{price}})</p>
+        <p>Category: {{category}}</p>
 
-    <br>
-
-    <p>Features:</p>
-    <ul>
-        <p>Processor:</p>
+        <p>Features:</p>
         <ul>
-            <li>Brand: {{features.processor.brand}}</li>
-            <li>Model: {{features.processor.model}}</li>
-            <li>Speed: {{features.processor.speed}}</li>
-            <li>Cores: ({{features.processor.cores}})</li>
-            <li>Cache: {{features.processor.cache}}</li>
-        </ul>
-
-        <br>
-
-        <p>Memory:</p>
-        <ul>
-            <li>Type: {{features.memory.type}}</li>
-            <li>Size: {{features.memory.size}}</li>
-            <li>Speed: {{features.memory.speed}}</li>
-        </ul>
-
-        <br>
-
-        <p>Storage:</p>
-        <ul>
-            <li>Type: {{features.storage.type}}</li>
-            <li>Size: {{features.storage.size}}</li>
-        </ul>
-
-        <br>
-
-        <p>Display:</p>
-        <ul>
-            <li>Size: {{features.display.size}}</li>
-            <li>Resolution: ({{features.display.resolution}})</li>
-            <li>Technology: {{features.display.technology}}</li>
-            <li>Color_space: {{features.display.color_space}}</li>
-            <li>Brightness: {{features.display.brightness}}</li>
-            <li>Refresh_rate: {{features.display.refresh_rate}}</li>
-        </ul>
-
-        <br>
-
-        <p>Graphics:</p>
-        <ul>
-            <li>brand: {{features.graphics.brand}}</li>
-            <li>model: {{features.graphics.model}}</li>
-            <li>memory: {{features.graphics.memory }}</li>
-        </ul>
-
-        <br>
-
-        <p>Ports:</p>
-        <ul>
-            <li>Type: {{features.ports.[0].type}}</li>
-            <li>Count: ({{features.ports.[0].count}})</li>
-
-            <br>
-
-            <p>Features:</p>
-
+            <p>Processor:</p>
             <ul>
-                <li>{{features.ports.[0].features.[0]}}</li>
-                <li>{{features.ports.[0].features.[1]}}</li>
-                <li>{{features.ports.[0].features.[2]}}</li>
-                <li>{{features.ports.[0].features.[3]}}</li>
+                <li>Brand: {{features.processor.brand}}</li>
+                <li>Model: {{features.processor.model}}</li>
+                <li>Speed: {{features.processor.speed}}</li>
+                <li>Cores: ({{features.processor.cores}})</li>
+                <li>Cache: {{features.processor.cache}}</li>
             </ul>
 
-            <br>
+            <p class="mt-3">Memory:</p>
+            <ul>
+                <li>Type: {{features.memory.type}}</li>
+                <li>Size: {{features.memory.size}}</li>
+                <li>Speed: {{features.memory.speed}}</li>
+            </ul>
 
-            <li>Type: {{features.ports.[1].type}}</li>
-            <li>Count: ({{features.ports.[1].count}})</li>
+            <p class="mt-3">Storage:</p>
+            <ul>
+                <li>Type: {{features.storage.type}}</li>
+                <li>Size: {{features.storage.size}}</li>
+            </ul>
+
+            <p class="mt-3">Display:</p>
+            <ul>
+                <li>Size: {{features.display.size}}</li>
+                <li>Resolution: ({{features.display.resolution}})</li>
+                <li>Technology: {{features.display.technology}}</li>
+                <li>Color_space: {{features.display.color_space}}</li>
+                <li>Brightness: {{features.display.brightness}}</li>
+                <li>Refresh_rate: {{features.display.refresh_rate}}</li>
+            </ul>
+
+            <p class="mt-3">Graphics:</p>
+            <ul>
+                <li>brand: {{features.graphics.brand}}</li>
+                <li>model: {{features.graphics.model}}</li>
+                <li>memory: {{features.graphics.memory }}</li>
+            </ul>
+
+            <p class="mt-3">Ports:</p>
+            <ul>
+                <li>Type: {{features.ports.[0].type}}</li>
+                <li>Count: ({{features.ports.[0].count}})</li>
+
+                <p class="mt-3">Features:</p>
+
+                <ul>
+                    <li>{{features.ports.[0].features.[0]}}</li>
+                    <li>{{features.ports.[0].features.[1]}}</li>
+                    <li>{{features.ports.[0].features.[2]}}</li>
+                    <li>{{features.ports.[0].features.[3]}}</li>
+                </ul>
+
+                <li class="mt-3">Type: {{features.ports.[1].type}}</li>
+                <li>Count: ({{features.ports.[1].count}})</li>
+            </ul>
+
+            <p class="mt-3">Battery:</p>
+            <ul>
+                <li>Type: {{features.battery.type}}</li>
+                <li>capacity: {{features.battery.capacity}}</li>
+                <li>life: {{features.battery.life}}</li>
+            </ul>
+
+            <p class="mt-3">Weight: {{features.weight}}</p>
+
+            <p>Dimensions:</p>
+            <ul>
+                <li>height: {{features.dimensions.height}}</li>
+                <li>width: {{features.dimensions.width}}</li>
+                <li>depth: {{features.dimensions.depth}}</li>
+            </ul>
+
+            <p class="mt-3">Operating system: {{features.operating_system}}</p>
+
+            <p>Accessories:</p>
+            <ul>
+                <li>Name: {{features.accessories.[0].name}}</li>
+                <li>Price: {{features.accessories.[0].price}}</li>
+
+                <li>Name: {{features.accessories.[1].name}}</li>
+                <li>Price: {{features.accessories.[1].price}}</li>
+
+                <li>Name: {{features.accessories.[2].name}}</li>
+                <li>Price: {{features.accessories.[2].price}}</li>
+
+                <br>
+            </ul>
         </ul>
 
-        <br>
-
-        <p>Battery:</p>
-        <ul>
-            <li>Type: {{features.battery.type}}</li>
-            <li>capacity: {{features.battery.capacity}}</li>
-            <li>life: {{features.battery.life}}</li>
-        </ul>
-
-        <br>
-        <p>Weight: {{features.weight}}</p>
-
-        <p>Dimensions:</p>
-        <ul>
-            <li>height: {{features.dimensions.height}}</li>
-            <li>width: {{features.dimensions.width}}</li>
-            <li>depth: {{features.dimensions.depth}}</li>
-        </ul>
-
-        <br>
-
-        <p>Operating system: {{features.operating_system}}</p>
-
-        <p>Accessories:</p>
-        <ul>
-            <li>Name: {{features.accessories.[0].name}}</li>
-            <li>Price: {{features.accessories.[0].price}}</li>
-
-            <br>
-
-            <li>Name: {{features.accessories.[1].name}}</li>
-            <li>Price: {{features.accessories.[1].price}}</li>
-
-            <br>
-
-            <li>Name: {{features.accessories.[2].name}}</li>
-            <li>Price: {{features.accessories.[2].price}}</li>
-
-            <br>
-        </ul>
-    </ul>
-
-</div>
+    </div>
+</main>
